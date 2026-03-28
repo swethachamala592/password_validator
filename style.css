@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align:start;
+}
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+}
+/* Reset */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #022b17, #1e013b);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Header (outside container) */
+.main-header {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+
+    /* Animation */
+    animation: slideDown 0.8s ease-in-out;
+}
+
+/* Container (centered card) */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+
+    /* Animation */
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+/* Input field */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input focus */
+input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102,126,234,0.5);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Button hover */
+button:hover {
+    background: #5a67d8;
+    transform: scale(1.05);
+}
+
+/* Result text */
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+
+    /* Animation */
+    animation: fadeInText 0.5s ease-in-out;
+}
+
+/* ---------------- Animations ---------------- */
+
+/* Header slide down */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container fade + scale */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Result fade */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
