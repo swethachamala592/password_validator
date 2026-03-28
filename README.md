@@ -6,7 +6,6 @@ This project is a simple and interactive **Password Validator Web Application** 
 It checks whether a password is valid based on basic rules and provides real-time feedback to the user.
 
 ---
-
 ## 🚀 Features
 - Validates password based on rules
 - Interactive frontend with animations
@@ -15,7 +14,6 @@ It checks whether a password is valid based on basic rules and provides real-tim
 - Backend powered by Flask
 
 ---
-
 ## 🛠️ Tech Stack
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Flask (Python)
